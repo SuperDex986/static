@@ -1,7 +1,7 @@
 <div id="icon-container"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
-      <title>WebView2</title>
+      <title>Wumpus</title>
 <style>
   @font-face {
   font-family: 'NotoColorEmoji';
@@ -15,6 +15,28 @@ body {
   font-family: SegoeBold, NotoColorEmoji;
 }
 </style>
+
+<script>
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+
+document.onkeydown = function(e) {
+if(event.keyCode == 123) {
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+return false;
+}
+if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+return false;
+}
+}
+</script>
+
 <script>
       var animation = bodymovin.loadAnimation({
   // animationData: { /* ... */ },
