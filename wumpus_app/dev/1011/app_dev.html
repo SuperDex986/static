@@ -1,0 +1,28 @@
+<div id="icon-container"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+      <title>WebView2 - DEV</title>
+<style>
+  @font-face {
+  font-family: 'NotoColorEmoji';
+  src: url(https://gitcdn.xyz/repo/googlefonts/noto-emoji/master/fonts/NotoColorEmoji.ttf);
+}
+    @font-face {
+  font-family: 'SegoeBold';
+  src: url(https://superdex986.github.io/static/fonts/Segoe%20UI%20Bold.ttf);
+}
+body {
+  font-family: SegoeBold, NotoColorEmoji;
+}
+</style>
+<script>
+      var animation = bodymovin.loadAnimation({
+  // animationData: { /* ... */ },
+  container: document.getElementById('icon-container'), // required
+  path: './wumpus.json', // required
+  renderer: 'svg', // required
+  loop: true, // optional
+  autoplay: true, // optional
+  name: "Wumpus Dancing SVG", // optional
+});
+</script>
