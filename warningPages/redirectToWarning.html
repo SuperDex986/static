@@ -26,6 +26,11 @@ function GetURLParameter(sParam)
 var warn_page = GetURLParameter('warn_page');
 if (warn_page = 'concept-home-page') {
   window.location.replace('https://superdex986.github.io/static/warningPages/warnConceptHomePage.html')
+   else {
+     console.log('No warn page found or no parameter detected.')
+     alert('No Warn Page found or No Parameter detected!')
+     window.location.replace('https://superdex986.github.io/')
+   }
 }
     
 console.log(warn_page)
