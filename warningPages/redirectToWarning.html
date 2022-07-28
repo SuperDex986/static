@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="shortcut icon" href="https://superdex986.github.io/static/images/normal/warn.png" type="image/png">
+</head>
+<body>
+
+</body>
+
+<script>
+function GetURLParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) 
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+            return sParameterName[1];
+        }
+    }
+}?
+
+var warn_page = GetURLParameter('warn_page');
+
+if warn_page = 'concept-home-page'{
+  window.location.replace('https://superdex986.github.io/static/warningPages/warnConceptHomePage.html')
+}
+</script>
+
+</html>
